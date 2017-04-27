@@ -14,3 +14,7 @@ docker run --name apache-php -v /path/to/web:/var/www/html -p 80:80 -d billwilli
 ```
 your web directory must contains a public directory (so /path/to/web/public must exist)
 All http request will be redirect to this public directory, and if the page didn't exist il will be redirect to index.php.
+
+## Supported tags
+- latest 
+- pgsql : with postgresql driver 
