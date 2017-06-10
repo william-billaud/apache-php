@@ -9,7 +9,7 @@ RUN echo "Europe/Paris" > /etc/timezone && dpkg-reconfigure -f noninteractive tz
 RUN sed -i 's/docker-php-\(ext-$ext.ini\)/\1/' /usr/local/bin/docker-php-ext-install
 
 # Install Xdebug
-RUN pecl install xdebug-2.5.0 \
+RUN pecl install xdebug-2.5.4 \
     && docker-php-ext-enable xdebug
 COPY ext-xdebug.ini /usr/local/etc/php/conf.d/
 
